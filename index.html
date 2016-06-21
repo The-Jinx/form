@@ -9,12 +9,17 @@
                 <form id="contact" method="post" action="https://formspree.io/andyukr@i.ua">
                     <fieldset>
                         <label for="name">Name</label>
-                        <input type="text" name="name" />
+                        <input type="text" name="name" required placeholder="First Name"/>
                     </fieldset>
                     <fieldset>
                         <label for="email">Email</label>
-                        <input type="email" name="email" />
+                        <input type="email" name="email" required placeholder="Email" />
                     </fieldset>
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required placeholder="Password" pattern="[A-Z] [0-9]"/>
+                    </fieldset>
+                    <button type="submit" value="Submit">Submit</button>
                 </form>
         </div>
     </body>
